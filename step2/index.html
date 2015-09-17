@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webpack课程－第二步－包的依赖</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>包之间的依赖</h2>
+		<ol class="intro">
+			<li>新建一个只包含单独字符串变量的js文件，需要符合COMMONJS规范。叫<code>data.js</code></li>
+			<li>在<code>entry.js</code>入口文件中<code>require</code>进来</li>
+			<li>再用webpack打包入口文件<code>webpack ./entry.js bundle.js</code></li>
+		</ol>
+		<script src="bundle.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webpack课程－第三步－Loader</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Webpack的核心：Loader</h2>
+		<ol class="intro">
+			<li>js文件，只要符合COMMONJS或者AMD规范，可以直接<code>require</code>进来使用（大量NPM上的包直接拿来用，浏览器端！）</li>
+			<li>JSON数据文件呢？我们需要<code>Loader</code></li>
+			<li><code>npm install json-loader</code></li>
+			<li>入口文件引入JSON文件，打印JSON数据</li>
+			<li>再用webpack打包入口文件<code>webpack ./entry.js bundle.js --module-bind 'json=json'</code></li>
+		</ol>
+		<script src="bundle.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webpack课程－第四步－CSS Loader</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>CSS的Loader</h2>
+		<ol class="intro">
+			<li>除了js和json代码文件，webpack还支持CSS样式文件</li>
+			<li>安装cssloader <code>npm install css-loader style-loader</code></li>
+			<li>在entry.js入口文件中，<code>require</code>引入css文件</li>
+			<li>使用webpack打包 <code>webpack ./entry.js bundle.js</code></li>
+			<li>bundle.js文件陡然增大</li>
+		</ol>
+		<script src="bundle.js"></script>
+	</div>
+</body>
+</html>

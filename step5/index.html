@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webpack课程－第五步－SASS Loader</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>SASS的Loader</h2>
+		<ol class="intro">
+			<li>除了支持CSS，还可以进行SASS或者LESS的预处理</li>
+			<li>安装cssloader和sassloader <code>npm install css-loader style-loader sass-loader</code></li>
+			<li>在entry.js入口文件中，<code>require</code>引入scss文件</li>
+			<li>使用webpack打包 <code>webpack ./entry.js bundle.js</code></li>
+			<li>bundle.js文件陡然增大</li>
+		</ol>
+		<script src="bundle.js"></script>
+	</div>
+</body>
+</html>

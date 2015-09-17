@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webpack课程－第七步－包装图片</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>包装图片</h2>
+		<ol class="intro">
+			<li>图片这种二进制文件怎么办？</li>
+			<li>先装loader <code>npm install url-loader</code></li>
+			<li>修改配置文件，添加图片的loader匹配规则，配置参数8192字节以下使用base64压缩</li>
+			<li>超过8192字节图片，会在loader参数中指定的目录生成一个新文件，同时返回一个地址</li>
+		</ol>
+		<script src="bundle.js"></script>
+	</div>
+</body>
+</html>
